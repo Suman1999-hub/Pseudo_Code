@@ -1,0 +1,93 @@
+A. #include <stdio.h>
+
+int main()
+{
+    
+    int arr[5]={1};
+    for(int i=0;i<5;i++){
+        printf("%d",arr[i]);
+    }
+    return 0;
+}
+
+Ans:
+  1. 1 & Garbage value
+  2. 1 1 1 1 1
+  3. 1 0 0 0 0 (Ans)
+  4. Error
+  
+  
+B. #include <stdio.h>
+
+int main()
+{
+    printf(5+"capgimini");
+
+    return 0;
+}
+Ans:
+  1. m
+  2. mini (Ans)
+  3. 1005
+  4. Error
+  
+C .#include <stdio.h>
+
+int main()
+{
+    printf("%c",5["capgimini"]);
+
+    return 0;
+}
+Ans:
+  1. Compile Error
+  2. Runtime Error
+  3. m (Ans)
+  4. Error
+  
+D. #include <iostream>
+using namespace std;
+  
+class Test
+{
+    static int x;
+public:
+    Test() { x++; }
+    static int getX() {return x;}
+};
+  
+int Test::x = 0;
+  
+int main()
+{
+    cout << Test::getX() << " ";
+    Test t[5];
+    cout << Test::getX();
+} 
+Ans:
+  1. 0 0
+  2. 0 5 (Ans)
+  3. 5 5
+  4. Compiler Error
+  
+E.Consider a binary tree T. The number of nodes for degree 0 is 20. Calculate the number of nodes whose degree is 2?
+Ans:
+  1. 18
+  2. 20
+  3. 22
+  4. 19 (Ans)
+Explanation: 
+  For an k-ary tree where each node has k children or no children, following relation holds
+  L = (k-1)*n + 1
+
+  Where L is the number of leaf nodes and n is the number of internal nodes.
+  since its a complete k tree, so every internal node will have K child.
+  So,
+     L = (k-1)*n + 1
+  => 20 = (2-1)*n + 1
+  => n = 20-1 = 19
+F. If several elements are competing for the same bucket in the hash table, what is it called?
+  1. Diffusion
+  2. Replication
+  3. Collision (Ans)
+  4. Duplication
